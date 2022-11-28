@@ -1,0 +1,18 @@
+{
+    "columns": [
+        "total"
+    ],
+    "rows": 22,
+    "cols": 1,
+    "target_is_numeric": true,
+    "columns_info": {
+        "total": [
+            "scale"
+        ]
+    },
+    "target_info": [],
+    "n_features": 1,
+    "is_sample_weighted": false,
+    "n_classes": 16,
+    "num_class": 16
+}

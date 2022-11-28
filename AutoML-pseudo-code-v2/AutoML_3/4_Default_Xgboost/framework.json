@@ -1,0 +1,151 @@
+{
+    "uid": "9f7c5aa1-2c6c-4ae9-812a-6210835f1c9e",
+    "name": "4_Default_Xgboost",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Staff Involved": {
+                            "Commissioned Corps (excepted) /1": 0,
+                            "Direct medical services provided through clinics and hospitals that the OPDIV operates": 1,
+                            "Exempt": 2,
+                            "HHS officers appointed by the President (exempt)": 3,
+                            "Life & Property as % Excepted": 4,
+                            "Number of staff to be furloughed /2": 5,
+                            "Orderly phase-down and suspension of operations": 6,
+                            "Other": 7,
+                            "Percent Exempt": 8,
+                            "Percent Furloughed": 9,
+                            "Percent Retained": 10,
+                            "Staff normally paid from or shifted to carryover funding or advanced appropriations": 11,
+                            "Staff to be furloughed.": 12,
+                            "Subtotal, authorized by law": 13,
+                            "Total number of staff to be retained": 14
+                        }
+                    },
+                    "columns": [
+                        "Staff Involved"
+                    ]
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    3.5917599939382256
+                ],
+                "mean": [
+                    5.006416279642114
+                ],
+                "var": [
+                    12.900739854055121
+                ],
+                "n_samples_seen": 16,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Staff Involved": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.7.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "23c29b43-375f-4a42-a86d-e61d6d0ececf",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 4,
+                "eval_metric": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 1
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Staff Involved": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "AutoML_3\\X.data",
+            "y_path": "AutoML_3\\y.data",
+            "results_path": "AutoML_3"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "objective": "reg:squarederror",
+            "eta": 0.075,
+            "max_depth": 6,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "seed": 4,
+            "eval_metric": "rmse",
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "4_Default_Xgboost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "4_Default_Xgboost\\learner_fold_0.xgboost"
+    ],
+    "predictions_fname": "4_Default_Xgboost\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 5392.833673696196,
+    "train_time": 0.4705164432525635,
+    "is_stacked": false
+}

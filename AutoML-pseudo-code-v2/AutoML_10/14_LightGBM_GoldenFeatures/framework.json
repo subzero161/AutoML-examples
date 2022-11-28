@@ -1,0 +1,766 @@
+{
+    "uid": "ef970475-ad5a-403f-a1d6-757c7d1a94b5",
+    "name": "14_LightGBM_GoldenFeatures",
+    "preprocessing": [
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "samhsa",
+                        "operation": "diff",
+                        "score": 1.8898423945
+                    },
+                    {
+                        "feature1": "hrsa",
+                        "feature2": "Centers for Disease Control and Prevention",
+                        "operation": "multiply",
+                        "score": 1.962618186
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "acf",
+                        "operation": "sum",
+                        "score": 1.962618186
+                    },
+                    {
+                        "feature1": "acf",
+                        "feature2": "Centers for Medicare and Medicaid Services",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "samhsa",
+                        "feature2": "acf",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "ahrq",
+                        "operation": "sum",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "Food and Drug Administration",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "os",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "os",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "acf",
+                        "feature2": "samhsa",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    }
+                ],
+                "new_columns": [
+                    "Centers for Medicare and Medicaid Services_diff_samhsa",
+                    "hrsa_multiply_Centers for Disease Control and Prevention",
+                    "aspr_sum_acf",
+                    "acf_ratio_Centers for Medicare and Medicaid Services",
+                    "samhsa_ratio_acf",
+                    "Centers for Medicare and Medicaid Services_sum_ahrq",
+                    "aspr_ratio_Food and Drug Administration",
+                    "aspr_ratio_os",
+                    "Centers for Medicare and Medicaid Services_ratio_os",
+                    "acf_ratio_samhsa"
+                ],
+                "ml_task": "multiclass_classification"
+            },
+            "categorical_y": {
+                "0.12": 0,
+                "0.403": 1,
+                "0.597": 2,
+                "15.0": 3,
+                "62.0": 4,
+                "79.0": 5,
+                "458.0": 6,
+                "758.0": 7,
+                "805.0": 8,
+                "3173.0": 9,
+                "4246.0": 10,
+                "5381.0": 11,
+                "10237.0": 12,
+                "11991.0": 13,
+                "16429.0": 14,
+                "18358.0": 15,
+                "35074.0": 16,
+                "51901.0": 17,
+                "76738.0": 18,
+                "86975.0": 19
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "golden_features": {
+                    "results_path": "AutoML_10",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "samhsa",
+                        "operation": "diff",
+                        "score": 1.8898423945
+                    },
+                    {
+                        "feature1": "hrsa",
+                        "feature2": "Centers for Disease Control and Prevention",
+                        "operation": "multiply",
+                        "score": 1.962618186
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "acf",
+                        "operation": "sum",
+                        "score": 1.962618186
+                    },
+                    {
+                        "feature1": "acf",
+                        "feature2": "Centers for Medicare and Medicaid Services",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "samhsa",
+                        "feature2": "acf",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "ahrq",
+                        "operation": "sum",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "Food and Drug Administration",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "os",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "os",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "acf",
+                        "feature2": "samhsa",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    }
+                ],
+                "new_columns": [
+                    "Centers for Medicare and Medicaid Services_diff_samhsa",
+                    "hrsa_multiply_Centers for Disease Control and Prevention",
+                    "aspr_sum_acf",
+                    "acf_ratio_Centers for Medicare and Medicaid Services",
+                    "samhsa_ratio_acf",
+                    "Centers for Medicare and Medicaid Services_sum_ahrq",
+                    "aspr_ratio_Food and Drug Administration",
+                    "aspr_ratio_os",
+                    "Centers for Medicare and Medicaid Services_ratio_os",
+                    "acf_ratio_samhsa"
+                ],
+                "ml_task": "multiclass_classification"
+            },
+            "categorical_y": {
+                "0.12": 0,
+                "0.403": 1,
+                "0.597": 2,
+                "15.0": 3,
+                "62.0": 4,
+                "79.0": 5,
+                "458.0": 6,
+                "758.0": 7,
+                "805.0": 8,
+                "3173.0": 9,
+                "4246.0": 10,
+                "5381.0": 11,
+                "10237.0": 12,
+                "11991.0": 13,
+                "16429.0": 14,
+                "18358.0": 15,
+                "35074.0": 16,
+                "51901.0": 17,
+                "76738.0": 18,
+                "86975.0": 19
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "golden_features": {
+                    "results_path": "AutoML_10",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "samhsa",
+                        "operation": "diff",
+                        "score": 1.8898423945
+                    },
+                    {
+                        "feature1": "hrsa",
+                        "feature2": "Centers for Disease Control and Prevention",
+                        "operation": "multiply",
+                        "score": 1.962618186
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "acf",
+                        "operation": "sum",
+                        "score": 1.962618186
+                    },
+                    {
+                        "feature1": "acf",
+                        "feature2": "Centers for Medicare and Medicaid Services",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "samhsa",
+                        "feature2": "acf",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "ahrq",
+                        "operation": "sum",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "Food and Drug Administration",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "os",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "os",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "acf",
+                        "feature2": "samhsa",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    }
+                ],
+                "new_columns": [
+                    "Centers for Medicare and Medicaid Services_diff_samhsa",
+                    "hrsa_multiply_Centers for Disease Control and Prevention",
+                    "aspr_sum_acf",
+                    "acf_ratio_Centers for Medicare and Medicaid Services",
+                    "samhsa_ratio_acf",
+                    "Centers for Medicare and Medicaid Services_sum_ahrq",
+                    "aspr_ratio_Food and Drug Administration",
+                    "aspr_ratio_os",
+                    "Centers for Medicare and Medicaid Services_ratio_os",
+                    "acf_ratio_samhsa"
+                ],
+                "ml_task": "multiclass_classification"
+            },
+            "categorical_y": {
+                "0.12": 0,
+                "0.403": 1,
+                "0.597": 2,
+                "15.0": 3,
+                "62.0": 4,
+                "79.0": 5,
+                "458.0": 6,
+                "758.0": 7,
+                "805.0": 8,
+                "3173.0": 9,
+                "4246.0": 10,
+                "5381.0": 11,
+                "10237.0": 12,
+                "11991.0": 13,
+                "16429.0": 14,
+                "18358.0": 15,
+                "35074.0": 16,
+                "51901.0": 17,
+                "76738.0": 18,
+                "86975.0": 19
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "golden_features": {
+                    "results_path": "AutoML_10",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "samhsa",
+                        "operation": "diff",
+                        "score": 1.8898423945
+                    },
+                    {
+                        "feature1": "hrsa",
+                        "feature2": "Centers for Disease Control and Prevention",
+                        "operation": "multiply",
+                        "score": 1.962618186
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "acf",
+                        "operation": "sum",
+                        "score": 1.962618186
+                    },
+                    {
+                        "feature1": "acf",
+                        "feature2": "Centers for Medicare and Medicaid Services",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "samhsa",
+                        "feature2": "acf",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "ahrq",
+                        "operation": "sum",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "Food and Drug Administration",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "os",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "os",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "acf",
+                        "feature2": "samhsa",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    }
+                ],
+                "new_columns": [
+                    "Centers for Medicare and Medicaid Services_diff_samhsa",
+                    "hrsa_multiply_Centers for Disease Control and Prevention",
+                    "aspr_sum_acf",
+                    "acf_ratio_Centers for Medicare and Medicaid Services",
+                    "samhsa_ratio_acf",
+                    "Centers for Medicare and Medicaid Services_sum_ahrq",
+                    "aspr_ratio_Food and Drug Administration",
+                    "aspr_ratio_os",
+                    "Centers for Medicare and Medicaid Services_ratio_os",
+                    "acf_ratio_samhsa"
+                ],
+                "ml_task": "multiclass_classification"
+            },
+            "categorical_y": {
+                "0.12": 0,
+                "0.403": 1,
+                "0.597": 2,
+                "15.0": 3,
+                "62.0": 4,
+                "79.0": 5,
+                "458.0": 6,
+                "758.0": 7,
+                "805.0": 8,
+                "3173.0": 9,
+                "4246.0": 10,
+                "5381.0": 11,
+                "10237.0": 12,
+                "11991.0": 13,
+                "16429.0": 14,
+                "18358.0": 15,
+                "35074.0": 16,
+                "51901.0": 17,
+                "76738.0": 18,
+                "86975.0": 19
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "golden_features": {
+                    "results_path": "AutoML_10",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "samhsa",
+                        "operation": "diff",
+                        "score": 1.8898423945
+                    },
+                    {
+                        "feature1": "hrsa",
+                        "feature2": "Centers for Disease Control and Prevention",
+                        "operation": "multiply",
+                        "score": 1.962618186
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "acf",
+                        "operation": "sum",
+                        "score": 1.962618186
+                    },
+                    {
+                        "feature1": "acf",
+                        "feature2": "Centers for Medicare and Medicaid Services",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "samhsa",
+                        "feature2": "acf",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "ahrq",
+                        "operation": "sum",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "Food and Drug Administration",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "aspr",
+                        "feature2": "os",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "Centers for Medicare and Medicaid Services",
+                        "feature2": "os",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    },
+                    {
+                        "feature1": "acf",
+                        "feature2": "samhsa",
+                        "operation": "ratio",
+                        "score": 1.9775021196
+                    }
+                ],
+                "new_columns": [
+                    "Centers for Medicare and Medicaid Services_diff_samhsa",
+                    "hrsa_multiply_Centers for Disease Control and Prevention",
+                    "aspr_sum_acf",
+                    "acf_ratio_Centers for Medicare and Medicaid Services",
+                    "samhsa_ratio_acf",
+                    "Centers for Medicare and Medicaid Services_sum_ahrq",
+                    "aspr_ratio_Food and Drug Administration",
+                    "aspr_ratio_os",
+                    "Centers for Medicare and Medicaid Services_ratio_os",
+                    "acf_ratio_samhsa"
+                ],
+                "ml_task": "multiclass_classification"
+            },
+            "categorical_y": {
+                "0.12": 0,
+                "0.403": 1,
+                "0.597": 2,
+                "15.0": 3,
+                "62.0": 4,
+                "79.0": 5,
+                "458.0": 6,
+                "758.0": 7,
+                "805.0": 8,
+                "3173.0": 9,
+                "4246.0": 10,
+                "5381.0": 11,
+                "10237.0": 12,
+                "11991.0": 13,
+                "16429.0": 14,
+                "18358.0": 15,
+                "35074.0": 16,
+                "51901.0": 17,
+                "76738.0": 18,
+                "86975.0": 19
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "golden_features": {
+                    "results_path": "AutoML_10",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "3.3.3",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "094628e9-bc1a-450d-829e-c331a660998e",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1238,
+                "objective": "multiclass",
+                "num_leaves": 95,
+                "learning_rate": 0.05,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 10,
+                "metric": "multi_logloss",
+                "custom_eval_metric_name": null,
+                "num_class": 20,
+                "explain_level": 1
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "3.3.3",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "a26a4408-f3c1-4904-9d2f-2c75ad01afb3",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1238,
+                "objective": "multiclass",
+                "num_leaves": 95,
+                "learning_rate": 0.05,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 10,
+                "metric": "multi_logloss",
+                "custom_eval_metric_name": null,
+                "num_class": 20,
+                "explain_level": 1
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "3.3.3",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "3fdc4003-1c35-4d6f-a565-4b433ff448f0",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1238,
+                "objective": "multiclass",
+                "num_leaves": 95,
+                "learning_rate": 0.05,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 10,
+                "metric": "multi_logloss",
+                "custom_eval_metric_name": null,
+                "num_class": 20,
+                "explain_level": 1
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "3.3.3",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "9f8212b4-1d55-4d6e-888e-7bc529bd21b0",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1238,
+                "objective": "multiclass",
+                "num_leaves": 95,
+                "learning_rate": 0.05,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 10,
+                "metric": "multi_logloss",
+                "custom_eval_metric_name": null,
+                "num_class": 20,
+                "explain_level": 1
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "3.3.3",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "4d260dd8-13d2-4f52-b586-b9efed486ea5",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1238,
+                "objective": "multiclass",
+                "num_leaves": 95,
+                "learning_rate": 0.05,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 10,
+                "metric": "multi_logloss",
+                "custom_eval_metric_name": null,
+                "num_class": 20,
+                "explain_level": 1
+            },
+            "name": "learner_fold_4"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {},
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification",
+            "golden_features": {
+                "results_path": "AutoML_10",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_10\\X.data",
+            "y_path": "AutoML_10\\y.data",
+            "results_path": "AutoML_10"
+        },
+        "learner": {
+            "model_type": "LightGBM",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "seed": 1238,
+            "objective": "multiclass",
+            "num_leaves": 95,
+            "learning_rate": 0.05,
+            "feature_fraction": 1.0,
+            "bagging_fraction": 1.0,
+            "min_data_in_leaf": 10,
+            "metric": "multi_logloss",
+            "custom_eval_metric_name": null,
+            "num_class": 20,
+            "explain_level": 1
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 1,
+        "name": "14_LightGBM_GoldenFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "14_LightGBM_GoldenFeatures\\learner_fold_0.lightgbm",
+        "14_LightGBM_GoldenFeatures\\learner_fold_1.lightgbm",
+        "14_LightGBM_GoldenFeatures\\learner_fold_2.lightgbm",
+        "14_LightGBM_GoldenFeatures\\learner_fold_3.lightgbm",
+        "14_LightGBM_GoldenFeatures\\learner_fold_4.lightgbm"
+    ],
+    "predictions_fname": "14_LightGBM_GoldenFeatures\\predictions_out_of_folds.csv",
+    "metric_name": "logloss",
+    "final_loss": 6.53941450930114e-05,
+    "train_time": 20.353533506393433,
+    "is_stacked": false,
+    "single_prediction_time": 0.04651165008544922
+}

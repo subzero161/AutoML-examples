@@ -1,0 +1,161 @@
+{
+    "uid": "a6ba1ea0-bb41-40bf-82a8-902aee551931",
+    "name": "4_Default_Xgboost",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "staff_involved": {
+                            "Commissioned Corps (excepted) /1": 0,
+                            "Direct medical services provided through clinics and hospitals that the OPDIV operates": 1,
+                            "Excepted": 2,
+                            "Exempt": 3,
+                            "HHS officers appointed by the President (exempt)": 4,
+                            "Law enforcement activities.": 5,
+                            "Maintain computer data": 6,
+                            "Maintenance of animals & protection of inanimate government property": 7,
+                            "Number of staff to be furloughed /2": 8,
+                            "Orderly phase-down and suspension of operations": 9,
+                            "Other": 10,
+                            "Percent Excepted": 11,
+                            "Percent Exempt": 12,
+                            "Percent Furloughed": 13,
+                            "Staff normally paid from or shifted to administrative funds appropriated in authorizing legislation.": 14,
+                            "Staff normally paid from or shifted to carryover funding or advanced appropriations": 15,
+                            "Staff normally paid from or shifted to reimbursable funding for which the reimbursement is not paid from funds provided by the lapsed FY22 appropriation.": 16,
+                            "Staff to be furloughed.": 17,
+                            "Subtotal, authorized by law": 18,
+                            "Subtotal, safety of human life and protection of property": 19,
+                            "Total on board staffing": 20
+                        }
+                    },
+                    "columns": [
+                        "staff_involved"
+                    ]
+                }
+            ],
+            "categorical_y": {
+                "0.0": 0,
+                "0.18": 1,
+                "0.27": 2,
+                "0.55": 3,
+                "32.0": 4,
+                "75.0": 5,
+                "80.0": 6,
+                "115.0": 7,
+                "137.0": 8,
+                "337.0": 9,
+                "643.0": 10,
+                "1798.0": 11,
+                "2151.0": 12,
+                "2303.0": 13,
+                "2515.0": 14,
+                "3842.0": 15,
+                "7693.0": 16,
+                "11899.0": 17,
+                "14050.0": 18
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "staff_involved": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.7.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "4a8c5186-e4ee-4282-a4a4-1dc11646ae25",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "objective": "multi:softprob",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 4,
+                "eval_metric": "mlogloss",
+                "num_class": 19,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 9999
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "staff_involved": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1\\X.data",
+            "y_path": "AutoML_1\\y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "objective": "multi:softprob",
+            "eta": 0.075,
+            "max_depth": 6,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "seed": 4,
+            "eval_metric": "mlogloss",
+            "num_class": 19,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "4_Default_Xgboost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "4_Default_Xgboost\\learner_fold_0.xgboost"
+    ],
+    "predictions_fname": "4_Default_Xgboost\\predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.03857883461996129,
+    "train_time": 82.78897905349731,
+    "is_stacked": false
+}

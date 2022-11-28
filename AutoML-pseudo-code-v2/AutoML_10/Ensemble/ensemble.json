@@ -1,0 +1,20 @@
+{
+    "name": "Ensemble",
+    "ml_task": "multiclass_classification",
+    "optimize_metric": "logloss",
+    "selected_models": [
+        {
+            "model": "27_LightGBM_GoldenFeatures",
+            "repeat": 44.0
+        },
+        {
+            "model": "29_LightGBM_GoldenFeatures",
+            "repeat": 15.0
+        }
+    ],
+    "predictions_fname": "Ensemble\\predictions_ensemble.csv",
+    "metric_name": "logloss",
+    "final_loss": 5.8771378526381e-05,
+    "train_time": 8.270434856414795,
+    "is_stacked": false
+}

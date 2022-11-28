@@ -1,0 +1,67 @@
+{
+    "columns": [
+        "staff_involved",
+        "acf",
+        "acl",
+        "ahrq",
+        "aspr",
+        "cdc",
+        "cms",
+        "fda",
+        "hrsa",
+        "ihs",
+        "nih",
+        "os",
+        "samhsa"
+    ],
+    "rows": 21,
+    "cols": 13,
+    "target_is_numeric": true,
+    "columns_info": {
+        "staff_involved": [
+            "categorical",
+            "many_categories"
+        ],
+        "acf": [
+            "scale"
+        ],
+        "acl": [
+            "scale"
+        ],
+        "ahrq": [
+            "scale"
+        ],
+        "aspr": [
+            "scale"
+        ],
+        "cdc": [
+            "scale"
+        ],
+        "cms": [
+            "scale"
+        ],
+        "fda": [
+            "scale"
+        ],
+        "hrsa": [
+            "scale"
+        ],
+        "ihs": [
+            "scale"
+        ],
+        "nih": [
+            "scale"
+        ],
+        "os": [
+            "scale"
+        ],
+        "samhsa": [
+            "scale"
+        ]
+    },
+    "target_info": [],
+    "n_features": 13,
+    "is_sample_weighted": false,
+    "n_classes": 19,
+    "num_class": 19
+}

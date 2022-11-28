@@ -1,0 +1,23 @@
+feature,mean_importance
+Centers for Medicare and Medicaid Services_sum_ahrq,-8.05478855625064e-11
+aspr_sum_acf,2.2758488687127114e-06
+samhsa,4.8342554822693155e-06
+ahrq,6.585990437813173e-06
+hrsa,8.225578930642342e-05
+Centers for Medicare and Medicaid Services,0.00010524017081187528
+hrsa_multiply_Centers for Disease Control and Prevention,0.0003349019255381356
+aspr_ratio_os,0.0006961562358310017
+os,0.0008255053351486019
+nih,0.0012096270488024283
+acl,0.0013321189423153629
+aspr,0.0017128860162261045
+ihs,0.005362759485974445
+Centers for Disease Control and Prevention,0.015055515233679873
+Centers for Medicare and Medicaid Services_ratio_os,0.037575923603716935
+acf_ratio_Centers for Medicare and Medicaid Services,0.045626492370558706
+Food and Drug Administration,0.06842702079507941
+aspr_ratio_Food and Drug Administration,0.07738137413547992
+samhsa_ratio_acf,0.09056256421015978
+Centers for Medicare and Medicaid Services_diff_samhsa,0.1295846147733893
+acf_ratio_samhsa,0.16865989684915889
+acf,0.2566559253563188

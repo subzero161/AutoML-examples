@@ -1,0 +1,160 @@
+{
+    "uid": "6f7aeb7e-04fa-4451-9068-bf4da6af59f0",
+    "name": "5_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Staff Involved": {
+                            "Activities required to ensure that fully funded programs continue operation, and that funded entitlement benefits are paid": 0,
+                            "Commissioned Corps (excepted) /1": 1,
+                            "Direct medical services provided through clinics and hospitals that the OPDIV operates": 2,
+                            "Excepted": 3,
+                            "Life & Property as % Excepted": 4,
+                            "Maintenance of animals & protection of inanimate government property": 5,
+                            "Other": 6,
+                            "Percent Furloughed": 7,
+                            "Protect ongoing medical experiments.": 8,
+                            "Staff normally paid from or shifted to administrative funds appropriated in authorizing legislation.": 9,
+                            "Staff normally paid from or shifted to carryover funding or advanced appropriations": 10,
+                            "Subtotal, authorized by law": 11,
+                            "Total number of staff to be retained": 12,
+                            "Total on board staffing": 13
+                        }
+                    },
+                    "columns": [
+                        "Staff Involved"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        3.7743997867210624
+                    ],
+                    "mean": [
+                        6.4375
+                    ],
+                    "var": [
+                        14.24609375
+                    ],
+                    "n_samples_seen": 16,
+                    "n_features_in": 1,
+                    "columns": [
+                        "Staff Involved"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    2.859366262975875
+                ],
+                "mean": [
+                    5.54840734008031
+                ],
+                "var": [
+                    8.17597542584462
+                ],
+                "n_samples_seen": 16,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.15
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Staff Involved": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "84c84992-3e28-43f3-b7cb-caabb7fc44a9",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 5,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Staff Involved": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "AutoML_2\\X.data",
+            "y_path": "AutoML_2\\y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 5,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "5_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "5_Default_NeuralNetwork\\learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "5_Default_NeuralNetwork\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 10226192.07011452,
+    "train_time": 4.545988082885742,
+    "is_stacked": false
+}

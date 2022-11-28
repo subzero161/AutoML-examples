@@ -1,0 +1,14 @@
+if (Staff Involved <= 11.5) and (Staff Involved > 5.5) and (Staff Involved <= 10.5) then response: 365.863 | based on 6 samples
+
+if (Staff Involved <= 11.5) and (Staff Involved <= 5.5) and (Staff Involved <= 4.5) then response: 638.03 | based on 5 samples
+
+if (Staff Involved > 11.5) and (Staff Involved > 13.5) then response: 6357.0 | based on 1 samples
+
+if (Staff Involved > 11.5) and (Staff Involved <= 13.5) and (Staff Involved > 12.5) then response: 11899.0 | based on 1 samples
+
+if (Staff Involved > 11.5) and (Staff Involved <= 13.5) and (Staff Involved <= 12.5) then response: 7693.0 | based on 1 samples
+
+if (Staff Involved <= 11.5) and (Staff Involved > 5.5) and (Staff Involved > 10.5) then response: 2303.0 | based on 1 samples
+
+if (Staff Involved <= 11.5) and (Staff Involved <= 5.5) and (Staff Involved > 4.5) then response: 7693.0 | based on 1 samples
+

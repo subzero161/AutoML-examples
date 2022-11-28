@@ -1,0 +1,162 @@
+{
+    "uid": "a6d93b3c-960d-46f1-8809-1e2fb15e3c43",
+    "name": "4_Default_Xgboost",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Staff Involved": {
+                            "Commissioned Corps (excepted) /1": 0,
+                            "Direct medical services provided through clinics and hospitals that the OPDIV operates": 1,
+                            "Exempt": 2,
+                            "HHS officers appointed by the President (exempt)": 3,
+                            "Law enforcement activities.": 4,
+                            "Maintain computer data": 5,
+                            "Maintenance of animals & protection of inanimate government property": 6,
+                            "Number of staff to be furloughed /2": 7,
+                            "Orderly phase-down and suspension of operations": 8,
+                            "Other": 9,
+                            "Percent Excepted": 10,
+                            "Percent Exempt": 11,
+                            "Percent Retained": 12,
+                            "Protect ongoing medical experiments.": 13,
+                            "Staff normally paid from or shifted to administrative funds appropriated in authorizing legislation.": 14,
+                            "Staff normally paid from or shifted to carryover funding or advanced appropriations": 15,
+                            "Staff normally paid from or shifted to reimbursable funding for which the reimbursement is not paid from funds provided by the lapsed FY22 appropriation.": 16,
+                            "Staff to be furloughed.": 17,
+                            "Subtotal, authorized by law": 18,
+                            "Subtotal, safety of human life and protection of property": 19,
+                            "Total number of staff to be retained": 20
+                        }
+                    },
+                    "columns": [
+                        "Staff Involved"
+                    ]
+                }
+            ],
+            "categorical_y": {
+                "0.0": 0,
+                "0.18": 1,
+                "0.27": 2,
+                "0.45": 3,
+                "32.0": 4,
+                "42.0": 5,
+                "59.0": 6,
+                "67.0": 7,
+                "75.0": 8,
+                "80.0": 9,
+                "115.0": 10,
+                "137.0": 11,
+                "337.0": 12,
+                "643.0": 13,
+                "2151.0": 14,
+                "2303.0": 15,
+                "2515.0": 16,
+                "6357.0": 17,
+                "7693.0": 18,
+                "11899.0": 19
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "Staff Involved": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.7.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "cf394807-a9e2-4765-8f55-db40befa4433",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "objective": "multi:softprob",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 4,
+                "eval_metric": "mlogloss",
+                "num_class": 20,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 9997
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Staff Involved": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1\\X.data",
+            "y_path": "AutoML_1\\y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "objective": "multi:softprob",
+            "eta": 0.075,
+            "max_depth": 6,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "seed": 4,
+            "eval_metric": "mlogloss",
+            "num_class": 20,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "4_Default_Xgboost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "4_Default_Xgboost\\learner_fold_0.xgboost"
+    ],
+    "predictions_fname": "4_Default_Xgboost\\predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.11911332827061415,
+    "train_time": 43.01671123504639,
+    "is_stacked": false
+}

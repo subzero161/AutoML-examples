@@ -1,0 +1,62 @@
+{
+    "columns": [
+        "acf",
+        "acl",
+        "ahrq",
+        "aspr",
+        "Centers for Disease Control and Prevention",
+        "Centers for Medicare and Medicaid Services",
+        "Food and Drug Administration",
+        "hrsa",
+        "ihs",
+        "nih",
+        "os",
+        "samhsa"
+    ],
+    "rows": 22,
+    "cols": 12,
+    "target_is_numeric": true,
+    "columns_info": {
+        "acf": [
+            "scale"
+        ],
+        "acl": [
+            "scale"
+        ],
+        "ahrq": [
+            "scale"
+        ],
+        "aspr": [
+            "scale"
+        ],
+        "Centers for Disease Control and Prevention": [
+            "scale"
+        ],
+        "Centers for Medicare and Medicaid Services": [
+            "scale"
+        ],
+        "Food and Drug Administration": [
+            "scale"
+        ],
+        "hrsa": [
+            "scale"
+        ],
+        "ihs": [
+            "scale"
+        ],
+        "nih": [
+            "scale"
+        ],
+        "os": [
+            "scale"
+        ],
+        "samhsa": [
+            "scale"
+        ]
+    },
+    "target_info": [
+        "scale_log"
+    ],
+    "n_features": 12,
+    "is_sample_weighted": false
+}

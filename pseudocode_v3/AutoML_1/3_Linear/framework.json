@@ -1,0 +1,286 @@
+{
+    "uid": "7ae0ebda-4de4-480c-a4b2-f00e3b684858",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "staff_involved": {
+                            "Commissioned Corps (excepted) /1": 0,
+                            "Direct medical services provided through clinics and hospitals that the OPDIV operates": 1,
+                            "Excepted": 2,
+                            "Exempt": 3,
+                            "HHS officers appointed by the President (exempt)": 4,
+                            "Law enforcement activities.": 5,
+                            "Maintain computer data": 6,
+                            "Maintenance of animals & protection of inanimate government property": 7,
+                            "Number of staff to be furloughed /2": 8,
+                            "Orderly phase-down and suspension of operations": 9,
+                            "Other": 10,
+                            "Percent Excepted": 11,
+                            "Percent Exempt": 12,
+                            "Percent Furloughed": 13,
+                            "Staff normally paid from or shifted to administrative funds appropriated in authorizing legislation.": 14,
+                            "Staff normally paid from or shifted to carryover funding or advanced appropriations": 15,
+                            "Staff normally paid from or shifted to reimbursable funding for which the reimbursement is not paid from funds provided by the lapsed FY22 appropriation.": 16,
+                            "Staff to be furloughed.": 17,
+                            "Subtotal, authorized by law": 18,
+                            "Subtotal, safety of human life and protection of property": 19,
+                            "Total on board staffing": 20
+                        }
+                    },
+                    "columns": [
+                        "staff_involved"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        6.1071221206970145,
+                        469.7918522478581,
+                        61.84953314854139,
+                        96.81279321553482,
+                        299.0080124223547,
+                        4061.281074837296,
+                        2030.2989400585857,
+                        5910.461685194346,
+                        898.3828702862843,
+                        5371.923571147065,
+                        5932.096270903475,
+                        2051.708787485416,
+                        222.97977020205172
+                    ],
+                    "mean": [
+                        10.108771929824561,
+                        265.6070175438596,
+                        29.474210526315787,
+                        44.89473684210526,
+                        225.0280701754386,
+                        2509.0,
+                        1131.1859649122807,
+                        3763.719298245614,
+                        528.6315789473684,
+                        3109.474210526316,
+                        3231.118771929825,
+                        1331.6215789473686,
+                        104.55438596491229
+                    ],
+                    "var": [
+                        37.296940597106804,
+                        220704.38443847335,
+                        3825.3647506925204,
+                        9372.716930193907,
+                        89405.791492767,
+                        16494003.96883158,
+                        4122113.7860030164,
+                        34933557.332150385,
+                        807091.7816238226,
+                        28857562.85424543,
+                        35189766.16726691,
+                        4209508.948644876,
+                        49719.9779193598
+                    ],
+                    "n_samples_seen": 285,
+                    "n_features_in": 13,
+                    "columns": [
+                        "staff_involved",
+                        "acf",
+                        "acl",
+                        "ahrq",
+                        "aspr",
+                        "cdc",
+                        "cms",
+                        "fda",
+                        "hrsa",
+                        "ihs",
+                        "nih",
+                        "os",
+                        "samhsa"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "categorical_y": {
+                "0.0": 0,
+                "0.18": 1,
+                "0.27": 2,
+                "0.55": 3,
+                "32.0": 4,
+                "75.0": 5,
+                "80.0": 6,
+                "115.0": 7,
+                "137.0": 8,
+                "337.0": 9,
+                "643.0": 10,
+                "1798.0": 11,
+                "2151.0": 12,
+                "2303.0": 13,
+                "2515.0": 14,
+                "3842.0": 15,
+                "7693.0": 16,
+                "11899.0": 17,
+                "14050.0": 18
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "staff_involved": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "acf": [
+                        "scale_normal"
+                    ],
+                    "acl": [
+                        "scale_normal"
+                    ],
+                    "ahrq": [
+                        "scale_normal"
+                    ],
+                    "aspr": [
+                        "scale_normal"
+                    ],
+                    "cdc": [
+                        "scale_normal"
+                    ],
+                    "cms": [
+                        "scale_normal"
+                    ],
+                    "fda": [
+                        "scale_normal"
+                    ],
+                    "hrsa": [
+                        "scale_normal"
+                    ],
+                    "ihs": [
+                        "scale_normal"
+                    ],
+                    "nih": [
+                        "scale_normal"
+                    ],
+                    "os": [
+                        "scale_normal"
+                    ],
+                    "samhsa": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Logistic Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "062a111e-f96f-4888-82c7-51d734e81b64",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "num_class": 19,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "staff_involved": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "acf": [
+                    "scale_normal"
+                ],
+                "acl": [
+                    "scale_normal"
+                ],
+                "ahrq": [
+                    "scale_normal"
+                ],
+                "aspr": [
+                    "scale_normal"
+                ],
+                "cdc": [
+                    "scale_normal"
+                ],
+                "cms": [
+                    "scale_normal"
+                ],
+                "fda": [
+                    "scale_normal"
+                ],
+                "hrsa": [
+                    "scale_normal"
+                ],
+                "ihs": [
+                    "scale_normal"
+                ],
+                "nih": [
+                    "scale_normal"
+                ],
+                "os": [
+                    "scale_normal"
+                ],
+                "samhsa": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1\\X.data",
+            "y_path": "AutoML_1\\y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "seed": 1235,
+            "num_class": 19,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear\\learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear\\predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.6769419710565975,
+    "train_time": 20.572493076324463,
+    "is_stacked": false
+}

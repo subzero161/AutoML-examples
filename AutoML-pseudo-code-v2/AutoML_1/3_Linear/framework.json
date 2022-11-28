@@ -1,0 +1,167 @@
+{
+    "uid": "200ec7b3-fe92-4db2-8855-8d4fe22afb20",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Staff Involved": {
+                            "Commissioned Corps (excepted) /1": 0,
+                            "Direct medical services provided through clinics and hospitals that the OPDIV operates": 1,
+                            "Exempt": 2,
+                            "HHS officers appointed by the President (exempt)": 3,
+                            "Law enforcement activities.": 4,
+                            "Maintain computer data": 5,
+                            "Maintenance of animals & protection of inanimate government property": 6,
+                            "Number of staff to be furloughed /2": 7,
+                            "Orderly phase-down and suspension of operations": 8,
+                            "Other": 9,
+                            "Percent Excepted": 10,
+                            "Percent Exempt": 11,
+                            "Percent Retained": 12,
+                            "Protect ongoing medical experiments.": 13,
+                            "Staff normally paid from or shifted to administrative funds appropriated in authorizing legislation.": 14,
+                            "Staff normally paid from or shifted to carryover funding or advanced appropriations": 15,
+                            "Staff normally paid from or shifted to reimbursable funding for which the reimbursement is not paid from funds provided by the lapsed FY22 appropriation.": 16,
+                            "Staff to be furloughed.": 17,
+                            "Subtotal, authorized by law": 18,
+                            "Subtotal, safety of human life and protection of property": 19,
+                            "Total number of staff to be retained": 20
+                        }
+                    },
+                    "columns": [
+                        "Staff Involved"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        5.934565415147655
+                    ],
+                    "mean": [
+                        10.26
+                    ],
+                    "var": [
+                        35.21906666666666
+                    ],
+                    "n_samples_seen": 300,
+                    "n_features_in": 1,
+                    "columns": [
+                        "Staff Involved"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "categorical_y": {
+                "0.0": 0,
+                "0.18": 1,
+                "0.27": 2,
+                "0.45": 3,
+                "32.0": 4,
+                "42.0": 5,
+                "59.0": 6,
+                "67.0": 7,
+                "75.0": 8,
+                "80.0": 9,
+                "115.0": 10,
+                "137.0": 11,
+                "337.0": 12,
+                "643.0": 13,
+                "2151.0": 14,
+                "2303.0": 15,
+                "2515.0": 16,
+                "6357.0": 17,
+                "7693.0": 18,
+                "11899.0": 19
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "Staff Involved": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Logistic Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "3e016c83-553f-4e8b-b623-1e731d7f4108",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "num_class": 20,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Staff Involved": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1\\X.data",
+            "y_path": "AutoML_1\\y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "seed": 1235,
+            "num_class": 20,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear\\learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear\\predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 2.0792618096112747,
+    "train_time": 8.090204954147339,
+    "is_stacked": false
+}

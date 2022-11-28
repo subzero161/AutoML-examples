@@ -1,0 +1,156 @@
+{
+    "uid": "81539f14-6ad1-4183-8c2d-1e33c5e3cc39",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Staff Involved": {
+                            "Commissioned Corps (excepted) /1": 0,
+                            "Direct medical services provided through clinics and hospitals that the OPDIV operates": 1,
+                            "Exempt": 2,
+                            "HHS officers appointed by the President (exempt)": 3,
+                            "Life & Property as % Excepted": 4,
+                            "Number of staff to be furloughed /2": 5,
+                            "Orderly phase-down and suspension of operations": 6,
+                            "Other": 7,
+                            "Percent Exempt": 8,
+                            "Percent Furloughed": 9,
+                            "Percent Retained": 10,
+                            "Staff normally paid from or shifted to carryover funding or advanced appropriations": 11,
+                            "Staff to be furloughed.": 12,
+                            "Subtotal, authorized by law": 13,
+                            "Total number of staff to be retained": 14
+                        }
+                    },
+                    "columns": [
+                        "Staff Involved"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        4.183300132670378
+                    ],
+                    "mean": [
+                        7.0
+                    ],
+                    "var": [
+                        17.5
+                    ],
+                    "n_samples_seen": 16,
+                    "n_features_in": 1,
+                    "columns": [
+                        "Staff Involved"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    3.5917599939382256
+                ],
+                "mean": [
+                    5.006416279642114
+                ],
+                "var": [
+                    12.900739854055121
+                ],
+                "n_samples_seen": 16,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "Staff Involved": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Linear Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "2d86810b-fb8d-4d88-8842-673d8d5993ab",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1235,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Staff Involved": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "AutoML_4\\X.data",
+            "y_path": "AutoML_4\\y.data",
+            "results_path": "AutoML_4"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1235,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear\\learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 4781.775716932538,
+    "train_time": 0.36063504219055176,
+    "is_stacked": false
+}

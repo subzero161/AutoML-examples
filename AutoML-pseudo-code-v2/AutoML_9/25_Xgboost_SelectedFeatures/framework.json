@@ -1,0 +1,607 @@
+{
+    "uid": "24e53fdd-6f60-4681-a346-3beb093bcc17",
+    "name": "25_Xgboost_SelectedFeatures",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "0",
+                "32",
+                "39"
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7": 7,
+                "8": 8,
+                "9": 9
+            },
+            "ml_task": "multiclass_classification",
+            "drop_features": [
+                "14",
+                "49",
+                "7",
+                "23",
+                "1",
+                "47",
+                "24",
+                "48",
+                "56",
+                "8",
+                "16",
+                "31",
+                "40",
+                "15",
+                "11",
+                "36"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "0": [
+                        "remove_column"
+                    ],
+                    "32": [
+                        "remove_column"
+                    ],
+                    "39": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "drop_features": [
+                    "14",
+                    "36_multiply_4",
+                    "49",
+                    "7",
+                    "36_multiply_28",
+                    "23",
+                    "1",
+                    "47",
+                    "24",
+                    "48",
+                    "56",
+                    "8",
+                    "16",
+                    "31",
+                    "40",
+                    "15",
+                    "random_feature",
+                    "11",
+                    "61_ratio_3",
+                    "36"
+                ]
+            }
+        },
+        {
+            "remove_columns": [
+                "0",
+                "32",
+                "39"
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7": 7,
+                "8": 8,
+                "9": 9
+            },
+            "ml_task": "multiclass_classification",
+            "drop_features": [
+                "14",
+                "49",
+                "7",
+                "23",
+                "1",
+                "47",
+                "24",
+                "48",
+                "56",
+                "8",
+                "16",
+                "31",
+                "40",
+                "15",
+                "11",
+                "36"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "0": [
+                        "remove_column"
+                    ],
+                    "32": [
+                        "remove_column"
+                    ],
+                    "39": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "drop_features": [
+                    "14",
+                    "36_multiply_4",
+                    "49",
+                    "7",
+                    "36_multiply_28",
+                    "23",
+                    "1",
+                    "47",
+                    "24",
+                    "48",
+                    "56",
+                    "8",
+                    "16",
+                    "31",
+                    "40",
+                    "15",
+                    "random_feature",
+                    "11",
+                    "61_ratio_3",
+                    "36"
+                ]
+            }
+        },
+        {
+            "remove_columns": [
+                "0",
+                "32",
+                "39"
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7": 7,
+                "8": 8,
+                "9": 9
+            },
+            "ml_task": "multiclass_classification",
+            "drop_features": [
+                "14",
+                "49",
+                "7",
+                "23",
+                "1",
+                "47",
+                "24",
+                "48",
+                "56",
+                "8",
+                "16",
+                "31",
+                "40",
+                "15",
+                "11",
+                "36"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "0": [
+                        "remove_column"
+                    ],
+                    "32": [
+                        "remove_column"
+                    ],
+                    "39": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "drop_features": [
+                    "14",
+                    "36_multiply_4",
+                    "49",
+                    "7",
+                    "36_multiply_28",
+                    "23",
+                    "1",
+                    "47",
+                    "24",
+                    "48",
+                    "56",
+                    "8",
+                    "16",
+                    "31",
+                    "40",
+                    "15",
+                    "random_feature",
+                    "11",
+                    "61_ratio_3",
+                    "36"
+                ]
+            }
+        },
+        {
+            "remove_columns": [
+                "0",
+                "32",
+                "39"
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7": 7,
+                "8": 8,
+                "9": 9
+            },
+            "ml_task": "multiclass_classification",
+            "drop_features": [
+                "14",
+                "49",
+                "7",
+                "23",
+                "1",
+                "47",
+                "24",
+                "48",
+                "56",
+                "8",
+                "16",
+                "31",
+                "40",
+                "15",
+                "11",
+                "36"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "0": [
+                        "remove_column"
+                    ],
+                    "32": [
+                        "remove_column"
+                    ],
+                    "39": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "drop_features": [
+                    "14",
+                    "36_multiply_4",
+                    "49",
+                    "7",
+                    "36_multiply_28",
+                    "23",
+                    "1",
+                    "47",
+                    "24",
+                    "48",
+                    "56",
+                    "8",
+                    "16",
+                    "31",
+                    "40",
+                    "15",
+                    "random_feature",
+                    "11",
+                    "61_ratio_3",
+                    "36"
+                ]
+            }
+        },
+        {
+            "remove_columns": [
+                "0",
+                "32",
+                "39"
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7": 7,
+                "8": 8,
+                "9": 9
+            },
+            "ml_task": "multiclass_classification",
+            "drop_features": [
+                "14",
+                "49",
+                "7",
+                "23",
+                "1",
+                "47",
+                "24",
+                "48",
+                "56",
+                "8",
+                "16",
+                "31",
+                "40",
+                "15",
+                "11",
+                "36"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "0": [
+                        "remove_column"
+                    ],
+                    "32": [
+                        "remove_column"
+                    ],
+                    "39": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "drop_features": [
+                    "14",
+                    "36_multiply_4",
+                    "49",
+                    "7",
+                    "36_multiply_28",
+                    "23",
+                    "1",
+                    "47",
+                    "24",
+                    "48",
+                    "56",
+                    "8",
+                    "16",
+                    "31",
+                    "40",
+                    "15",
+                    "random_feature",
+                    "11",
+                    "61_ratio_3",
+                    "36"
+                ]
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.7.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "6cdfaa57-bc2f-4b04-91c0-142098587dba",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "objective": "multi:softprob",
+                "eta": 0.075,
+                "max_depth": 7,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 3,
+                "eval_metric": "mlogloss",
+                "num_class": 10,
+                "explain_level": 1
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 891
+        },
+        {
+            "library_version": "1.7.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "053a111c-2510-4132-b9c3-0ce5d4dc9c91",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "objective": "multi:softprob",
+                "eta": 0.075,
+                "max_depth": 7,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 3,
+                "eval_metric": "mlogloss",
+                "num_class": 10,
+                "explain_level": 1
+            },
+            "name": "learner_fold_1",
+            "best_ntree_limit": 3478
+        },
+        {
+            "library_version": "1.7.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "80341e1c-feb9-4b3e-94cf-da9905b61e29",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "objective": "multi:softprob",
+                "eta": 0.075,
+                "max_depth": 7,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 3,
+                "eval_metric": "mlogloss",
+                "num_class": 10,
+                "explain_level": 1
+            },
+            "name": "learner_fold_2",
+            "best_ntree_limit": 347
+        },
+        {
+            "library_version": "1.7.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "9d61dd48-53a1-4ca4-87ec-032b46628808",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "objective": "multi:softprob",
+                "eta": 0.075,
+                "max_depth": 7,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 3,
+                "eval_metric": "mlogloss",
+                "num_class": 10,
+                "explain_level": 1
+            },
+            "name": "learner_fold_3",
+            "best_ntree_limit": 360
+        },
+        {
+            "library_version": "1.7.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "3bfbe640-d845-40e9-8ce2-c83a6e85065c",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "objective": "multi:softprob",
+                "eta": 0.075,
+                "max_depth": 7,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 3,
+                "eval_metric": "mlogloss",
+                "num_class": 10,
+                "explain_level": 1
+            },
+            "name": "learner_fold_4",
+            "best_ntree_limit": 565
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "0": [
+                    "remove_column"
+                ],
+                "32": [
+                    "remove_column"
+                ],
+                "39": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification",
+            "drop_features": [
+                "14",
+                "36_multiply_4",
+                "49",
+                "7",
+                "36_multiply_28",
+                "23",
+                "1",
+                "47",
+                "24",
+                "48",
+                "56",
+                "8",
+                "16",
+                "31",
+                "40",
+                "15",
+                "random_feature",
+                "11",
+                "61_ratio_3",
+                "36"
+            ]
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_9\\X.data",
+            "y_path": "AutoML_9\\y.data",
+            "results_path": "AutoML_9"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "objective": "multi:softprob",
+            "eta": 0.075,
+            "max_depth": 7,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "seed": 3,
+            "eval_metric": "mlogloss",
+            "num_class": 10,
+            "explain_level": 1
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 1,
+        "name": "25_Xgboost_SelectedFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_features_selection",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "25_Xgboost_SelectedFeatures\\learner_fold_0.xgboost",
+        "25_Xgboost_SelectedFeatures\\learner_fold_1.xgboost",
+        "25_Xgboost_SelectedFeatures\\learner_fold_2.xgboost",
+        "25_Xgboost_SelectedFeatures\\learner_fold_3.xgboost",
+        "25_Xgboost_SelectedFeatures\\learner_fold_4.xgboost"
+    ],
+    "predictions_fname": "25_Xgboost_SelectedFeatures\\predictions_out_of_folds.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.13939937361580856,
+    "train_time": 53.37044811248779,
+    "is_stacked": false,
+    "single_prediction_time": 0.04350638389587402
+}

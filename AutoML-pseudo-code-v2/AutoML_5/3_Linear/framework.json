@@ -1,0 +1,166 @@
+{
+    "uid": "5599765d-dbce-4f9c-84f0-a88500ffdac2",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "Staff Involved": {
+                            "Activities required to ensure that fully funded programs continue operation, and that funded entitlement benefits are paid": 0,
+                            "Commissioned Corps (excepted) /1": 1,
+                            "Excepted": 2,
+                            "Exempt": 3,
+                            "HHS officers appointed by the President (exempt)": 4,
+                            "Law enforcement activities.": 5,
+                            "Maintain computer data": 6,
+                            "Maintenance of animals & protection of inanimate government property": 7,
+                            "Number of staff to be furloughed /2": 8,
+                            "Orderly phase-down and suspension of operations": 9,
+                            "Other": 10,
+                            "Percent Exempt": 11,
+                            "Percent Furloughed": 12,
+                            "Percent Retained": 13,
+                            "Staff normally paid from or shifted to administrative funds appropriated in authorizing legislation.": 14,
+                            "Staff normally paid from or shifted to carryover funding or advanced appropriations": 15,
+                            "Staff normally paid from or shifted to reimbursable funding for which the reimbursement is not paid from funds provided by the lapsed FY22 appropriation.": 16,
+                            "Staff to be furloughed.": 17,
+                            "Subtotal, authorized by law": 18,
+                            "Total on board staffing": 19
+                        }
+                    },
+                    "columns": [
+                        "Staff Involved"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        5.487375409873912
+                    ],
+                    "mean": [
+                        9.573333333333334
+                    ],
+                    "var": [
+                        30.111288888888886
+                    ],
+                    "n_samples_seen": 300,
+                    "n_features_in": 1,
+                    "columns": [
+                        "Staff Involved"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "categorical_y": {
+                "0.0": 0,
+                "0.18": 1,
+                "0.45": 2,
+                "0.55": 3,
+                "42.0": 4,
+                "59.0": 5,
+                "75.0": 6,
+                "80.0": 7,
+                "115.0": 8,
+                "137.0": 9,
+                "337.0": 10,
+                "643.0": 11,
+                "669.0": 12,
+                "1798.0": 13,
+                "2303.0": 14,
+                "2515.0": 15,
+                "3842.0": 16,
+                "7693.0": 17,
+                "11899.0": 18,
+                "14050.0": 19
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "Staff Involved": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Logistic Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "492f107c-216b-4226-ad2f-861cb446e5dd",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "num_class": 20,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Staff Involved": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_5\\X.data",
+            "y_path": "AutoML_5\\y.data",
+            "results_path": "AutoML_5"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "seed": 1235,
+            "num_class": 20,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear\\learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear\\predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 2.0748380067075636,
+    "train_time": 8.167424440383911,
+    "is_stacked": false
+}

@@ -1,0 +1,242 @@
+{
+    "uid": "5055ede7-0b1a-4476-9106-3152bfb365ee",
+    "name": "5_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        393.3155169273892,
+                        55.26860546105153,
+                        86.79332934252133,
+                        229.03526713969183,
+                        3296.0965883563863,
+                        1744.0327669262697,
+                        4617.8260738596855,
+                        769.3517551177317,
+                        4359.635489599759,
+                        4925.563629687747,
+                        1691.5500587035551,
+                        199.0013825917737
+                    ],
+                    "mean": [
+                        182.469375,
+                        22.445625,
+                        34.880625,
+                        150.9375,
+                        1821.715625,
+                        906.28,
+                        2375.800625,
+                        412.471875,
+                        2000.4981249999998,
+                        2608.7018749999997,
+                        1007.855,
+                        82.31875
+                    ],
+                    "var": [
+                        154697.09585585937,
+                        3054.618749609375,
+                        7533.082018359374,
+                        52457.15359375,
+                        10864252.71977461,
+                        3041650.2921125004,
+                        21324317.64841836,
+                        591902.1231027343,
+                        19006421.60217773,
+                        24261177.070102736,
+                        2861341.6011000006,
+                        39601.5502734375
+                    ],
+                    "n_samples_seen": 16,
+                    "n_features_in": 12,
+                    "columns": [
+                        "acf",
+                        "acl",
+                        "ahrq",
+                        "aspr",
+                        "Centers for Disease Control and Prevention",
+                        "Centers for Medicare and Medicaid Services",
+                        "Food and Drug Administration",
+                        "hrsa",
+                        "ihs",
+                        "nih",
+                        "os",
+                        "samhsa"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    3.9094690976351276
+                ],
+                "mean": [
+                    6.15959848486354
+                ],
+                "var": [
+                    15.28394862536402
+                ],
+                "n_samples_seen": 16,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.189
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "acf": [
+                        "scale_normal"
+                    ],
+                    "acl": [
+                        "scale_normal"
+                    ],
+                    "ahrq": [
+                        "scale_normal"
+                    ],
+                    "aspr": [
+                        "scale_normal"
+                    ],
+                    "Centers for Disease Control and Prevention": [
+                        "scale_normal"
+                    ],
+                    "Centers for Medicare and Medicaid Services": [
+                        "scale_normal"
+                    ],
+                    "Food and Drug Administration": [
+                        "scale_normal"
+                    ],
+                    "hrsa": [
+                        "scale_normal"
+                    ],
+                    "ihs": [
+                        "scale_normal"
+                    ],
+                    "nih": [
+                        "scale_normal"
+                    ],
+                    "os": [
+                        "scale_normal"
+                    ],
+                    "samhsa": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "84c75baa-420b-47cf-bd81-16634c33d41a",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 5,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "acf": [
+                    "scale_normal"
+                ],
+                "acl": [
+                    "scale_normal"
+                ],
+                "ahrq": [
+                    "scale_normal"
+                ],
+                "aspr": [
+                    "scale_normal"
+                ],
+                "Centers for Disease Control and Prevention": [
+                    "scale_normal"
+                ],
+                "Centers for Medicare and Medicaid Services": [
+                    "scale_normal"
+                ],
+                "Food and Drug Administration": [
+                    "scale_normal"
+                ],
+                "hrsa": [
+                    "scale_normal"
+                ],
+                "ihs": [
+                    "scale_normal"
+                ],
+                "nih": [
+                    "scale_normal"
+                ],
+                "os": [
+                    "scale_normal"
+                ],
+                "samhsa": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "AutoML_8\\X.data",
+            "y_path": "AutoML_8\\y.data",
+            "results_path": "AutoML_8"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 5,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "5_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "5_Default_NeuralNetwork\\learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "5_Default_NeuralNetwork\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 31331.13243697402,
+    "train_time": 0.4442586898803711,
+    "is_stacked": false
+}

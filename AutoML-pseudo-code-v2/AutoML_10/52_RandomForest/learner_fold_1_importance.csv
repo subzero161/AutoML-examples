@@ -1,0 +1,13 @@
+feature,mean_importance
+ahrq,0.0
+Food and Drug Administration,0.0
+samhsa,0.0
+acf,0.06613652017915286
+aspr,0.11051040926139262
+acl,0.21777099620227974
+Centers for Medicare and Medicaid Services,0.8021568203051761
+ihs,0.979378588285374
+os,1.0449049580520746
+hrsa,1.3561085294396373
+nih,1.8194949598994121
+Centers for Disease Control and Prevention,3.260919359510774

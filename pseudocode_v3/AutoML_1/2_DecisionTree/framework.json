@@ -1,0 +1,151 @@
+{
+    "uid": "3b1d6bfa-3ccb-40ea-aa9d-7a7ded1ea7c5",
+    "name": "2_DecisionTree",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "staff_involved": {
+                            "Commissioned Corps (excepted) /1": 0,
+                            "Direct medical services provided through clinics and hospitals that the OPDIV operates": 1,
+                            "Excepted": 2,
+                            "Exempt": 3,
+                            "HHS officers appointed by the President (exempt)": 4,
+                            "Law enforcement activities.": 5,
+                            "Maintain computer data": 6,
+                            "Maintenance of animals & protection of inanimate government property": 7,
+                            "Number of staff to be furloughed /2": 8,
+                            "Orderly phase-down and suspension of operations": 9,
+                            "Other": 10,
+                            "Percent Excepted": 11,
+                            "Percent Exempt": 12,
+                            "Percent Furloughed": 13,
+                            "Staff normally paid from or shifted to administrative funds appropriated in authorizing legislation.": 14,
+                            "Staff normally paid from or shifted to carryover funding or advanced appropriations": 15,
+                            "Staff normally paid from or shifted to reimbursable funding for which the reimbursement is not paid from funds provided by the lapsed FY22 appropriation.": 16,
+                            "Staff to be furloughed.": 17,
+                            "Subtotal, authorized by law": 18,
+                            "Subtotal, safety of human life and protection of property": 19,
+                            "Total on board staffing": 20
+                        }
+                    },
+                    "columns": [
+                        "staff_involved"
+                    ]
+                }
+            ],
+            "categorical_y": {
+                "0.0": 0,
+                "0.18": 1,
+                "0.27": 2,
+                "0.55": 3,
+                "32.0": 4,
+                "75.0": 5,
+                "80.0": 6,
+                "115.0": 7,
+                "137.0": 8,
+                "337.0": 9,
+                "643.0": 10,
+                "1798.0": 11,
+                "2151.0": 12,
+                "2303.0": 13,
+                "2515.0": 14,
+                "3842.0": 15,
+                "7693.0": 16,
+                "11899.0": 17,
+                "14050.0": 18
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "staff_involved": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "0624d396-6407-40d8-9339-7a227fb15b2c",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "criterion": "gini",
+                "max_depth": 3,
+                "num_class": 19,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "trees_in_step": 1,
+            "train_cant_improve_limit": 0,
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "staff_involved": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1\\X.data",
+            "y_path": "AutoML_1\\y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Decision Tree",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "seed": 1235,
+            "criterion": "gini",
+            "max_depth": 3,
+            "num_class": 19,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "2_DecisionTree",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "2_DecisionTree\\learner_fold_0.decision_tree"
+    ],
+    "predictions_fname": "2_DecisionTree\\predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 1.6423885345933116,
+    "train_time": 24.726359367370605,
+    "is_stacked": false
+}

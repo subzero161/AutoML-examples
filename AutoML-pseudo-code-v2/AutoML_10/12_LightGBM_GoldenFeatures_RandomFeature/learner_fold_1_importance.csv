@@ -1,0 +1,24 @@
+feature,mean_importance
+random_feature,-9.610982834790643e-07
+samhsa,4.9061475644663286e-06
+aspr_sum_acf,2.4856803452328056e-05
+Centers for Medicare and Medicaid Services_sum_ahrq,7.567622844608189e-05
+aspr_ratio_os,7.953127944814414e-05
+Centers for Medicare and Medicaid Services,0.00010454084745119136
+acl,0.0001720600275256902
+hrsa_multiply_Centers for Disease Control and Prevention,0.00024957970470414393
+ahrq,0.00042815642929337267
+Food and Drug Administration,0.0009070457828720891
+hrsa,0.001188617270165077
+Centers for Medicare and Medicaid Services_diff_samhsa,0.001295027527097154
+Centers for Medicare and Medicaid Services_ratio_os,0.0023356291987619046
+aspr,0.004707114499945232
+samhsa_ratio_acf,0.0049234256532591295
+ihs,0.0073374964069718275
+Centers for Disease Control and Prevention,0.00866780038866254
+aspr_ratio_Food and Drug Administration,0.010976211994014853
+acf_ratio_Centers for Medicare and Medicaid Services,0.011734142711414156
+nih,0.03253968306823743
+acf,0.03620059057321599
+acf_ratio_samhsa,0.0819365780856954
+os,0.17388643923025193

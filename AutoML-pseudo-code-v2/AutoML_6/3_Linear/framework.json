@@ -1,0 +1,237 @@
+{
+    "uid": "ecc577d2-2c2e-4f35-ab32-d85399ce4b16",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        419.325187808769,
+                        55.03485600053842,
+                        86.35334301351266,
+                        298.5693949381785,
+                        3348.332052607908,
+                        1792.4768874643128,
+                        5791.614070907521,
+                        804.5914091595556,
+                        5287.896863971536,
+                        4922.669723213588,
+                        1868.080635841467,
+                        198.92433539146865
+                    ],
+                    "mean": [
+                        266.780625,
+                        23.555,
+                        36.494375000000005,
+                        227.0625,
+                        2266.096875,
+                        1118.2825,
+                        4055.386875,
+                        533.090625,
+                        2787.94,
+                        2639.0474999999997,
+                        1363.520625,
+                        82.55625
+                    ],
+                    "var": [
+                        175833.6131308594,
+                        3028.8353749999997,
+                        7456.899849609375,
+                        89143.68359375,
+                        11211327.534521487,
+                        3212973.39209375,
+                        33542793.546333984,
+                        647367.3356933595,
+                        27961853.244000003,
+                        24232677.20384375,
+                        3489725.2620058595,
+                        39570.89121093751
+                    ],
+                    "n_samples_seen": 16,
+                    "n_features_in": 12,
+                    "columns": [
+                        "acf",
+                        "acl",
+                        "ahrq",
+                        "aspr",
+                        "Centers for Disease Control and Prevention",
+                        "Centers for Medicare and Medicaid Services",
+                        "Food and Drug Administration",
+                        "hrsa",
+                        "ihs",
+                        "nih",
+                        "os",
+                        "samhsa"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    3.0341920086260563
+                ],
+                "mean": [
+                    7.612096184978883
+                ],
+                "var": [
+                    9.206321145210223
+                ],
+                "n_samples_seen": 16,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.403
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "acf": [
+                        "scale_normal"
+                    ],
+                    "acl": [
+                        "scale_normal"
+                    ],
+                    "ahrq": [
+                        "scale_normal"
+                    ],
+                    "aspr": [
+                        "scale_normal"
+                    ],
+                    "Centers for Disease Control and Prevention": [
+                        "scale_normal"
+                    ],
+                    "Centers for Medicare and Medicaid Services": [
+                        "scale_normal"
+                    ],
+                    "Food and Drug Administration": [
+                        "scale_normal"
+                    ],
+                    "hrsa": [
+                        "scale_normal"
+                    ],
+                    "ihs": [
+                        "scale_normal"
+                    ],
+                    "nih": [
+                        "scale_normal"
+                    ],
+                    "os": [
+                        "scale_normal"
+                    ],
+                    "samhsa": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Linear Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "197d3ef1-b5e3-4a22-bb89-754a5e7f759e",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1235,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "acf": [
+                    "scale_normal"
+                ],
+                "acl": [
+                    "scale_normal"
+                ],
+                "ahrq": [
+                    "scale_normal"
+                ],
+                "aspr": [
+                    "scale_normal"
+                ],
+                "Centers for Disease Control and Prevention": [
+                    "scale_normal"
+                ],
+                "Centers for Medicare and Medicaid Services": [
+                    "scale_normal"
+                ],
+                "Food and Drug Administration": [
+                    "scale_normal"
+                ],
+                "hrsa": [
+                    "scale_normal"
+                ],
+                "ihs": [
+                    "scale_normal"
+                ],
+                "nih": [
+                    "scale_normal"
+                ],
+                "os": [
+                    "scale_normal"
+                ],
+                "samhsa": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "AutoML_6\\X.data",
+            "y_path": "AutoML_6\\y.data",
+            "results_path": "AutoML_6"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1235,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear\\learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 28265107.95674489,
+    "train_time": 6.293943405151367,
+    "is_stacked": false
+}

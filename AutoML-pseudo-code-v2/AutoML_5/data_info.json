@@ -1,0 +1,19 @@
+{
+    "columns": [
+        "Staff Involved"
+    ],
+    "rows": 22,
+    "cols": 1,
+    "target_is_numeric": true,
+    "columns_info": {
+        "Staff Involved": [
+            "categorical",
+            "few_categories"
+        ]
+    },
+    "target_info": [],
+    "n_features": 1,
+    "is_sample_weighted": false,
+    "n_classes": 20,
+    "num_class": 20
+}

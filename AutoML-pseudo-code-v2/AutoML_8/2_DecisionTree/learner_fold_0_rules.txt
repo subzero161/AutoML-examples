@@ -1,0 +1,14 @@
+if (hrsa <= 1037.0) and (Centers for Disease Control and Prevention <= 1397.0) and (os <= 117.5) then response: 192.95 | based on 8 samples
+
+if (hrsa <= 1037.0) and (Centers for Disease Control and Prevention <= 1397.0) and (os > 117.5) then response: 3397.333 | based on 3 samples
+
+if (hrsa > 1037.0) and (Centers for Medicare and Medicaid Services > 4832.0) then response: 76738.0 | based on 1 samples
+
+if (hrsa > 1037.0) and (Centers for Medicare and Medicaid Services <= 4832.0) and (aspr > 214.5) then response: 35472.0 | based on 1 samples
+
+if (hrsa > 1037.0) and (Centers for Medicare and Medicaid Services <= 4832.0) and (aspr <= 214.5) then response: 35074.0 | based on 1 samples
+
+if (hrsa <= 1037.0) and (Centers for Disease Control and Prevention > 1397.0) and (Centers for Medicare and Medicaid Services > 164.0) then response: 16429.0 | based on 1 samples
+
+if (hrsa <= 1037.0) and (Centers for Disease Control and Prevention > 1397.0) and (Centers for Medicare and Medicaid Services <= 164.0) then response: 10237.0 | based on 1 samples
+
